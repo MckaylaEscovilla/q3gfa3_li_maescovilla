@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var rd = Math.round(Math.random() * 1001);
+        rd = rd.toString();
+        var date = new Date();
+
+        if(rd.length == 4){
+            var x = parseInt(rd[0]) * 1000;
+            var y = parseInt(rd[1]) * 100;
+            var z = parseInt(rd[2]) * 10;
+            var w = parseInt(rd[3]);
+            document.write('Randomly generated number: ', rd, "<br>", "<br>");
+            document.write('Breakdown: ', x, ' ', y, ' ', z, ' ', w, "<br>", "<br>");
+        }
+
+        if(rd.length == 3){
+            var x = parseInt(rd[0]) * 100;
+            var y = parseInt(rd[1]) * 10;
+            var z = parseInt(rd[2]);
+            document.write('Randomly generated number: ', rd, "<br>", "<br>");
+            document.write('Breakdown: ', x, ' ', y, ' ', z, "<br>", "<br>");
+        }
+
+        if(rd.length == 2){
+            var x = parseInt(rd[0]) * 10;
+            var y = parseInt(rd[1]);
+            document.write('Randomly generated number: ', rd, "<br>", "<br>");
+            document.write('Breakdown: ', x, ' ', y, "<br>", "<br>");
+        }
+
+        if(rd.length == 1){
+            var x = parseInt(rd[0]);
+            document.write('Randomly generated number: ', rd, "<br>", "<br>");
+            document.write('Breakdown: ', x, "<br>", "<br>");
+        }
+        document.write(date);
+    </script>
+</body>
+</html>
